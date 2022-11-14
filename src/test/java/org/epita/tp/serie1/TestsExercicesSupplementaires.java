@@ -137,21 +137,85 @@ public class TestsExercicesSupplementaires {
     public void test_exercice4_f80(){
         long resultF80 = ExercicesSupplementaires.exercice4(80);
         System.out.println(resultF80);
-        Assertions.assertThat(resultF80).isEqualTo(23416728348467744L);
+        Assertions.assertThat(resultF80).isEqualTo( 23416728348467685L);
     }
 
     @Test
-    public void test_exercice5(){
-
+    @DisplayName("Jessica-Marie-Sue-Hellen est une femme...difficile. Elle n'accepte de sortir qu'avec des hommes selon les critères suivants :  \n" +
+            "* Âge : Il doit avoir entre 18 et 35 ans\n" +
+            "* Physique : Au minimum 8/10\n" +
+            "* Revenus annuels : Au minimum 50 000€/an, mais si c'est au delà de 1 000 000€/an, on oublie le reste des critères !\n" +
+            "Ecrire une méthode permettant de modéliser la chance d'un homme à sortir avec Jessica-Marie-Sue-Helen")
+    public void test_exercice5_21_9_60000_true(){
+        boolean resultExo5Test1 = ExercicesSupplementaires.exercice5(21, 9, 60000);
+        System.out.println(resultExo5Test1);
+        Assertions.assertThat(resultExo5Test1).isEqualTo(true);
+    }
+    
+    @Test
+    @DisplayName("21, 7, 90000 -> false")
+    public void test_exercice5_21_7_90000_false(){
+        boolean resultExo5Test2 = ExercicesSupplementaires.exercice5(21, 7, 90000);
+        System.out.println(resultExo5Test2);
+        Assertions.assertThat(resultExo5Test2).isEqualTo(false);
     }
 
     @Test
-    public void test_exercice6(){
-
+    @DisplayName("90, 2, 2000000 -> true")
+    public void test_exercice5_90_2_2000000_true(){
+        boolean resultExo5Test3 = ExercicesSupplementaires.exercice5(90, 2, 2000000);
+        System.out.println(resultExo5Test3);
+        Assertions.assertThat(resultExo5Test3).isEqualTo(true);
     }
 
     @Test
+    @DisplayName("En général, lorsque vous payer, vous recevez un ticket de carte bleue avec le numéro de votre carte masquée. " +
+            "Seuls restent les 4 derniers numéros, le reste étant remplacé par des #.\n" +
+            "    Le but de cet exercice est d'écrire une méthode permettant de " +
+            "remplacer tous les caractères d'une chaîne de caractère par des # (sauf les 4 derniers)." +
+            "123456789012 -> ########9012")
+    public void test_exercice6_1(){
+        String resultExo6Test1 = ExercicesSupplementaires.exercice6("123456789012");
+        System.out.println(resultExo6Test1);
+        Assertions.assertThat(resultExo6Test1).isEqualTo("########9012");
+    }
+
+    @Test
+    @DisplayName("1234 5678 9012 -> ##########9012")
+    public void test_exercice6_2(){
+        String resultExo6Test2 = ExercicesSupplementaires.exercice6("1234 5678 9012");
+        System.out.println(resultExo6Test2);
+        Assertions.assertThat(resultExo6Test2).isEqualTo("##########9012");
+    }
+
+    @Test
+    @DisplayName("MomNomEstPersonne -> #############onne")
+    public void test_exercice6_3(){
+        String resultExo6Test3 = ExercicesSupplementaires.exercice6("MomNomEstPersonne");
+        System.out.println(resultExo6Test3);
+        Assertions.assertThat(resultExo6Test3).isEqualTo("#############onne");
+    }
+
+    @Test
+    @DisplayName("42 -> 42")
+    public void test_exercice6_4(){
+        String resultExo6Test4 = ExercicesSupplementaires.exercice6("42");
+        System.out.println(resultExo6Test4);
+        Assertions.assertThat(resultExo6Test4).isEqualTo("42");
+    }
+
+    @Test
+    @DisplayName("Le but est de prendre un texte et de la convertir soit :  \n" +
+            "- Tout en majuscules si le texte comprend une majorité de majuscules.  \n" +
+            "- Tout en minuscules si le texte comprend une majorité de minuscules.  \n" +
+            "- En cas d'égalité, on ne convertira rien !  \n" +
+            "\"Toto\" -> \"toto\"\n" +
+            "\"TITi\" -> \"TITI\"\n" +
+            "\"taTA\" -> \"taTA\" ")
     public void test_exercice7(){
+        String resultExo7Test1 = ExercicesSupplementaires.exercice7("Toto");
+        System.out.println(resultExo7Test1);
+
 
     }
 

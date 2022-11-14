@@ -1,5 +1,6 @@
-org/epita/tp/serie2/naif/AlgoNaif.class
-org/epita/tp/serie2/backtracking/Dame.class
-org/epita/tp/serie2/backtracking/AlgoBackTracking.class
-org/epita/tp/serie0/Calculatrice.class
-org/epita/tp/serie1/ExercicesSupplementaires.class
+org\epita\tp\serie4\SuiteFibonacci.class
+org\epita\tp\serie0\Calculatrice.class
+org\epita\tp\serie1\ExercicesSupplementaires.class
+org\epita\tp\serie2\backtracking\AlgoBackTracking.class
+org\epita\tp\serie2\naif\AlgoNaif.class
+org\epita\tp\serie2\backtracking\Dame.class
