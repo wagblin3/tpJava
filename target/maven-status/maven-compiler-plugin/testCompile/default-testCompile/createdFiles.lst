@@ -1,5 +1,5 @@
-org\epita\tp\serie1\TestsExercicesSupplementaires.class
-org\epita\tp\serie2\TestsComparatifs.class
-org\epita\tp\serie0\TestsCalculatrice.class
-org\epita\tp\serie2\TestsAlgoNaif.class
-org\epita\tp\serie2\TestsAlgoBackTracking.class
+org/epita/tp/serie2/TestsComparatifs.class
+org/epita/tp/serie1/TestsExercicesSupplementaires.class
+org/epita/tp/serie0/TestsCalculatrice.class
+org/epita/tp/serie2/TestsAlgoNaif.class
+org/epita/tp/serie2/TestsAlgoBackTracking.class

@@ -17,6 +17,10 @@ public class ExercicesSupplementaires {
     }
 
     public static int exercice2(float[] decimaux) throws IllegalArgumentException{
+        if ( decimaux == null) {
+            throw new IllegalArgumentException("Calcul de la moyenne impossible sur un tableau vide");
+        }
+        
         if ( decimaux.length  == 0) {
             throw new IllegalArgumentException("Calcul de la moyenne impossible sur un tableau vide");
         }

@@ -57,6 +57,18 @@ public class TestsExercicesSupplementaires {
     }
 
     @Test
+    @DisplayName("Doit retourner une exception lorsque le tableau est null")
+    public void test_exercice2_return_exception_when_null_table(){
+
+        float[] fifthTable = null;
+
+        org.junit.jupiter.api.Assertions.assertThrows(IllegalArgumentException.class, () -> {
+            int resultExoExc = ExercicesSupplementaires.exercice2(fifthTable);
+            System.out.println(resultExoExc);
+        });
+    }
+
+    @Test
     @DisplayName("Soit un tableau d'entiers relatifs, trouvez l'index de l'élément le plus éloigné de zéro.")
     public void test_exercice3_nominal(){
         long[] exo3table1 = {1, 2, 10, -15, 3};
